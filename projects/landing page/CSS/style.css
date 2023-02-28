@@ -1,0 +1,46 @@
+@font-face {
+  font-family: "roboto";
+  src: url("../Assets/Fonts/Roboto-Regular-webfont.woff") format("woff"),
+    url("../Assets/Fonts/Roboto-Bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "roboto";
+  src: url("../Assets/Fonts/Roboto-Bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+/* END font-face */
+* {
+  border: 1px solid red;
+}
+body {
+  font-family: roboto;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+header,
+footer {
+  background-color: #1f2937;
+  color: #f9faf8;
+}
+
+nav {
+  display: flex;
+}
+
+.nav_links {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav_links a {
+  text-decoration: none;
+  color: #e5e7eb;
+}
