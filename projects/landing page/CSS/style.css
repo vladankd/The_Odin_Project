@@ -111,6 +111,11 @@ nav * {
   max-width: 200px;
   margin: 25px;
 }
+
+.ilustration p {
+  text-align: center;
+}
+
 .ilustrations_container img {
   border: 5px solid #3882f6;
   border-radius: 15px;
