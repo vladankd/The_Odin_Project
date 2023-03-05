@@ -12,6 +12,7 @@
   font-weight: bold;
   font-style: normal;
 }
+
 /* END font-face */
 
 body {
@@ -43,6 +44,7 @@ button {
 }
 
 /* Nav styling */
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -103,15 +105,20 @@ nav * {
   padding: 10px;
   margin: 10px;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
-
+.ilustration {
+  max-width: 200px;
+  margin: 25px;
+}
 .ilustrations_container img {
-  border: 2px solid #3882f6;
-  border-radius: 5px;
+  border: 5px solid #3882f6;
+  border-radius: 15px;
   padding: 0;
 }
+
 /* Quote styling */
+
 .quote {
   background-color: #e5e7eb;
 }
@@ -122,6 +129,7 @@ nav * {
 }
 
 /* Call to action styling */
+
 .cta {
   clear: both;
   display: flex;
