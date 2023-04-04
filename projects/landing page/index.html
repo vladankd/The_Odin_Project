@@ -9,18 +9,24 @@
   </head>
   <body>
     <div class="container">
-      <header>
-        <nav>
-          <h2 class="logo">header logo</h2>
-          <ul class="nav_links">
-            <li><a href="#">header link one</a></li>
-            <li><a href="#">header link two</a></li>
-            <li><a href="#">header link three</a></li>
-          </ul>
+      <header class="main_header">
+        <nav class="nav row">
+          <div class="column-4">
+            <h2 class="logo">header logo</h2>
+          </div>
+          <!-- END column-4 -->
+          <div class="column-8">
+            <ul class="nav_links">
+              <li><a href="#">header link one</a></li>
+              <li><a href="#">header link two</a></li>
+              <li><a href="#">header link three</a></li>
+            </ul>
+          </div>
+          <!-- END column-8 -->
         </nav>
         <!-- END nav -->
-        <div class="hero">
-          <div class="hero_content">
+        <div class="hero row">
+          <div class="hero_content column-6">
             <h1>This website is awesome</h1>
             <p>
               This website has some subtext that goes here under the main title.
@@ -28,21 +34,23 @@
             </p>
             <button type="submit">Sign up</button>
           </div>
-          <div class="hero_img">
-            <img src="./Assets/IMG/placeholder_img.png" alt="Img placeholder" />
+          <div class="hero_img column-6">
+            <img src="./Assets/IMG/pexels.jpg" alt="Img placeholder" />
           </div>
         </div>
         <!-- END hero -->
       </header>
       <!-- END header -->
-      <main>
+      <main class="main">
         <!-- Random info START -->
         <section class="random_info">
           <h2>Some random information.</h2>
           <!-- ilustration container Start -->
-          <div class="ilustrations_container">
-            <div class="ilustration">
+          <div class="ilustrations_container row">
+            <!-- Ilustration body -->
+            <div class="ilustration_body column-3">
               <img
+                class="ilustration_img"
                 src="./Assets/IMG/default-avatar-photo-placeholder-profile-icon-vector.png"
                 alt="ilustration"
               />
@@ -50,8 +58,10 @@
                 This is some subtext under the ilustration or image
               </p>
             </div>
-            <div class="ilustration">
+            <!-- Ilustration body -->
+            <div class="ilustration_body column-3">
               <img
+                class="ilustration_img"
                 src="./Assets/IMG/default-avatar-photo-placeholder-profile-icon-vector.png"
                 alt="ilustration"
               />
@@ -59,8 +69,10 @@
                 This is some subtext under the ilustration or image
               </p>
             </div>
-            <div class="ilustration">
+            <!-- Ilustration body -->
+            <div class="ilustration_body column-3">
               <img
+                class="ilustration_img"
                 src="./Assets/IMG/default-avatar-photo-placeholder-profile-icon-vector.png"
                 alt="ilustration"
               />
@@ -68,13 +80,15 @@
                 This is some subtext under the ilustration or image
               </p>
             </div>
-            <div class="ilustration">
+            <!-- Ilustration body -->
+            <div class="ilustration_body column-3">
               <img
+                class="ilustration_img"
                 src="./Assets/IMG/default-avatar-photo-placeholder-profile-icon-vector.png"
                 alt="ilustration"
               />
               <p class="ilustration_description">
-                This is some random text unde ilustartion
+                This is some subtext under the ilustration or image
               </p>
             </div>
             <!-- ilustaration container END -->
@@ -82,27 +96,30 @@
         </section>
         <!-- Random info END -->
         <!-- Quote START -->
-        <div class="quote">
-          <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi
-            voluptates commodi ipsam, nisi magni voluptatibus nihil
-            exercitationem voluptate, fugiat ea atque quam quisquam doloremque
-            possimus nesciunt minima suscipit porro ducimus!
-          </p>
-          <p class="author">-Ivo Andric, Srpski pisac</p>
+        <div class="quote_body clearfix">
+          <blockquote>
+            <p class="quote_text">
+              If people would know how little brain is ruling the world, they
+              would die of fear.
+            </p>
+          </blockquote>
+
+          <p class="quote_author">-Ivo Andric, Serbian writer</p>
         </div>
         <!-- Quote END -->
         <!-- CTA Start -->
-        <div class="cta">
-          <div class="cta_call">
+        <div class="cta_container row">
+          <div class="cta_body column-8">
             <h4>Call to action! It's time!</h4>
             <p>Sign up for our product by clicking theat button over there</p>
           </div>
-          <button type="submit">Sign up</button>
+          <div class="btn_container column-4">
+            <button class="cta_btn" type="submit">Sign up</button>
+          </div>
         </div>
         <!-- CTA END -->
       </main>
-      <footer>
+      <footer class="footer">
         <p class="copyright">Copyright &copy; The Odin Project 2023</p>
       </footer>
     </div>
