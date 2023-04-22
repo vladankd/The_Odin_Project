@@ -5,15 +5,91 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="CSS/style.css" />
-    <title>Test document</title>
+    <title>Speaker submission form</title>
+    <link rel="icon" href="./IMG/code_piece_puzzle_icon_251444.png" type="image/x-icon">
   </head>
   <body>
-    <h1>Testing file</h1>
-    <p>
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi laboriosam
-      porro, quod doloremque nostrum repellendus ipsam, amet autem sequi
-      necessitatibus impedit delectus nam debitis. Consequatur error culpa
-      laboriosam porro esse!
-    </p>
+    <label for="toggle" class="toggle-label">Dark mode</label>
+      <input type="checkbox" name="togle" id="toggle" class="toggle">  
+    
+    <header class="speaker-form-header">
+      <h1 class="form-page-heading">Speaker submission!!!</h1>
+      <p><em>Want to speak at our fake conference? Fill out this form.</em></p>
+    </header>
+    <form
+      action="http://httpbin.org/post"
+      method="POST"
+      class="speaker-submission-form"
+    >
+      <ul class="form-ul">
+        <li class="form-row">
+          <label for="name">Name </label>
+          <input type="text" name="speaker_name" id="name" />
+        </li>
+        <li class="form-row">
+          <label for="email">Email </label>
+          <input
+            type="email"
+            name="speaker-email"
+            id="email"
+            placeholder="you@example.com"
+          />
+        </li>
+        <fieldset class="legacy-form-row">
+          <legend class="form-p">Type of talk</legend>
+          <input type="radio" name="talk" id="main-stage" value="main-stage" />
+          <label for="main-stage">Main Stage</label>
+          <input
+            type="radio"
+            name="talk"
+            id="workshop"
+            value="workshop"
+            checked
+          />
+          <label for="workshop">Workshop</label>
+        </fieldset>
+        <li class="form-row">
+          <label for="t-shirt">T-Shirt size</label>
+          <select name="t-shirt" id="t-shirt">
+            <option value="XS">Extra small</option>
+            <option value="S">Small</option>
+            <option value="M">Medium</option>
+            <option value="L">Large</option>
+            <option value="XL">Extra large</option>
+          </select>
+        </li>
+        <li class="form-row">
+          <label for="description">Abstract</label>
+          <textarea
+            name="description"
+            id="description"
+            cols="30"
+            rows="10"
+          ></textarea>
+          <div class="instructions">
+            Describe your talk in 500 words or less
+          </div>
+        </li>
+        <li class="form-row">
+          <label for="availibility" class="cbx-label">
+            <span>I'm actually available the date of the talk</span>
+            <input type="checkbox" name="availible" id="availibility" />
+          </label>
+        </li>
+        <li class="form-row">
+          <button type="submit">Submit</button>
+        </li>
+      </ul>
+    </form>
+    <script src="JS/mainScript.js"></script>
+    <script>
+      import { library, icon } from '@fortawesome/fontawesome-svg-core'
+import { faCamera } from '@fortawesome/free-solid-svg-icons'
+
+library.add(faCamera)
+
+const camera = icon({ prefix: 'fas', iconName: 'camera' })
+
+    </script>
   </body>
 </html>
