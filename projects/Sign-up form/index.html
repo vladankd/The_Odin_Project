@@ -6,12 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="CSS/style.css" />
     <title>Speaker submission form</title>
-    <link rel="icon" href="./IMG/code_piece_puzzle_icon_251444.png" type="image/x-icon">
+    <link
+      rel="icon"
+      href="./IMG/code_piece_puzzle_icon_251444.png"
+      type="image/x-icon"
+    />
   </head>
   <body>
-    <label for="toggle" class="toggle-label">Dark mode</label>
-      <input type="checkbox" name="togle" id="toggle" class="toggle">  
-    
+    <label for="toggle" class="toggle-label"
+      ><img
+        src="./IMG/light-bulb-off.svg"
+        alt="SVG light-bulb-off"
+        class="light-svg"
+      />
+    </label>
+    <input type="checkbox" name="togle" id="toggle" class="toggle" />
+
     <header class="speaker-form-header">
       <h1 class="form-page-heading">Speaker submission!!!</h1>
       <p><em>Want to speak at our fake conference? Fill out this form.</em></p>
@@ -82,14 +92,5 @@
       </ul>
     </form>
     <script src="JS/mainScript.js"></script>
-    <script>
-      import { library, icon } from '@fortawesome/fontawesome-svg-core'
-import { faCamera } from '@fortawesome/free-solid-svg-icons'
-
-library.add(faCamera)
-
-const camera = icon({ prefix: 'fas', iconName: 'camera' })
-
-    </script>
   </body>
 </html>

@@ -234,3 +234,9 @@ body {
     margin-left: 120px;
   }
 }
+
+/* Color mode toggler stylling */
+
+.toggle {
+  display: none;
+}
